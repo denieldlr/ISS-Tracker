@@ -10,8 +10,7 @@ my_email = ""
 password = ""
 MY_LATITUDE = 13.963251
 MY_LONGITUDE = 121.324281
-BEBU_LATITUDE = 25.280950
-BEBU_LONGITUDE = 51.549810
+
 my_location = {"lat": MY_LATITUDE,
                "lng": MY_LONGITUDE,
                "tzid": "Asia/Manila",
@@ -54,7 +53,7 @@ while is_on:
                                     msg=f"Subject: Look UP at the ISS!\n\nAt {time_now}, has passed over Tiaong, Quezon. Sent thru Python.")
 
     count +=1
-    print(f"Tiaong, PH: Latitude diff: {latitude_difference} / Longitude diff: {longitude_difference}")
+    print(f"PH: Latitude diff: {latitude_difference} / Longitude diff: {longitude_difference}")
     print(f"Checking again after 2-3 minutes. Count: {count} / Mail sent: {count_mail}")
 
     if count % 2 == 0:
